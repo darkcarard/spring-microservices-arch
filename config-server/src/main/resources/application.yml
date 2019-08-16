@@ -1,0 +1,12 @@
+server:
+  port: 9001
+spring:  application:    name: config
+  cloud:    config:      server:        git:          uri: file:///D:/Development/own/local-configurations  security:    user:      name: configUser
+      password: configPassword
+      roles:
+        - SYSTEM
+eureka:  client:    region: default
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://discUser:discPassword@localhost:8082/eureka/
+      
