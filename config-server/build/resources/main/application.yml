@@ -1,0 +1,9 @@
+server:
+  port: 9001
+spring:  application:    name: config
+  cloud:    config:      server:        git:          uri: file:///D:/Development/own/local-configurations  security:    user:      name: configUser
+      password: configPassword
+      roles:
+        - SYSTEM
+
+      

@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import co.ardicarl.bookapi.domain.Book;
+import co.ardicarl.bookapi.domain.model.Book;
+import co.ardicarl.bookapi.domain.repository.BookRepository;
 import co.ardicarl.bookapi.exception.BookNotFoundException;
-import co.ardicarl.bookapi.repository.BookRepository;
 
 @Service
 @Transactional(readOnly = true)

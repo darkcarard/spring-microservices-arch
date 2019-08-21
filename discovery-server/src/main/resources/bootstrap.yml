@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: discovery
+      password: configPassword
+      username: configUser
+      uri: http://localhost:9001

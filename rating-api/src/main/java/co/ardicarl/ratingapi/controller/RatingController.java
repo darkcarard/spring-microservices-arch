@@ -24,7 +24,6 @@ public class RatingController {
 
 	@Autowired
 	public RatingController(RatingService ratingService) {
-		super();
 		this.ratingService = ratingService;
 	}
 

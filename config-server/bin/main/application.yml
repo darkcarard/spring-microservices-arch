@@ -5,8 +5,10 @@ spring:  application:    name: config
       password: configPassword
       roles:
         - SYSTEM
-eureka:  client:    region: default
+eureka:
+  client:
+    region: default
     registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://discUser:discPassword@localhost:8082/eureka/
+      defaultZone: http://discUser:discPassword@localhost:9000/eureka/
       
